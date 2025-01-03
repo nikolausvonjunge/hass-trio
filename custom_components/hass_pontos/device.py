@@ -51,7 +51,7 @@ async def get_device_info(hass, entry):
         "identifiers": {(DOMAIN, "pontos_base")},
         "connections": {(CONNECTION_NETWORK_MAC, mac_address)},
         "name": device_name,
-        "manufacturer": "Hansgrohe",
+        "manufacturer": "Syr",
         "model": device_type,
         "sw_version": firmware_version,
         "serial_number": serial_number,
