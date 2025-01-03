@@ -62,21 +62,6 @@ SENSOR_DETAILS = {
         "state_class": "total_increasing",
         "format_dict": {"Vol[L]": ""}
     },
-    "water_pressure": {
-        "name": "Water pressure",
-        "endpoint": "getBAR",
-        "unit": "bar",
-        "device_class": "pressure",
-        "format_dict": {"mbar": ""},
-        "scale": 0.001
-    },
-    "water_temperature": {
-        "name": "Water temperature",
-        "endpoint": "getCEL",
-        "unit": "°C",
-        "device_class": "temperature",
-        "scale": 0.1
-    },
     "no_pulse_time": {
         "name": "Time since last turbine pulse",
         "endpoint": "getNPS",
