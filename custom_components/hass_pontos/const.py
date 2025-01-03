@@ -6,7 +6,7 @@ from homeassistant.components.sensor import SensorDeviceClass
 DOMAIN = "hass_trio"
 CONF_IP_ADDRESS = "ip_address"
 CONF_DEVICE_NAME = "device_name"
-FETCH_INTERVAL = timedelta(seconds=10)
+FETCH_INTERVAL = timedelta(seconds=60)
 
 BASE_URL = "http://{ip}:5333/trio/"
 URL_ADMIN = f"{BASE_URL}set/ADM/(2)f"
@@ -82,20 +82,7 @@ SENSOR_DETAILS = {
         "unit": "bar",
         "device_class": "pressure",
         "entity_category": EntityCategory.DIAGNOSTIC
-    },
-    "wifi_state": {
-        "name": "Wifi state",
-        "endpoint": "getWFS",
-        "entity_category": EntityCategory.DIAGNOSTIC
-    },
-    "wifi_signal_strength": {
-        "name": "Wifi signal strength",
-        "endpoint": "getWFR",
-        "unit": "dBm",
-        "device_class": "signal_strength",
-        "scale": -1,
-        "entity_category": EntityCategory.DIAGNOSTIC
-    },
+    }
     "battery_voltage": {
         "name": "Battery voltage",
         "endpoint": "getBAT",
@@ -111,27 +98,17 @@ SENSOR_DETAILS = {
         "device_class": "voltage",
         "format_dict": {",": "."},
         "entity_category": EntityCategory.DIAGNOSTIC
-    },
-    "serial_number": {
-        "name": "Serial number",
-        "endpoint": "getSRN",
-        "entity_category": EntityCategory.DIAGNOSTIC
-    },
+    }
     "firmware_version": {
         "name": "Firmware version",
         "endpoint": "getVER",
         "entity_category": EntityCategory.DIAGNOSTIC
     },
-    "mac_address": {
-        "name": "MAC Address",
-        "endpoint": "getMAC1",
-        "entity_category": EntityCategory.DIAGNOSTIC
-    },
-    "alarm_status": {
-        "name": "Alarm status",
-        "endpoint": "getALA",
-        "code_dict": ALARM_CODES
-    },
+#    "alarm_status": {
+#        "name": "Alarm status",
+#        "endpoint": "getALA",
+#        "code_dict": ALARM_CODES
+#    },
     "active_profile": {
         "name": "Active profile",
         "endpoint": "getPRF",
