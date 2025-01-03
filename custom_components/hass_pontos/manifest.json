@@ -1,6 +1,6 @@
 {
-	"domain": "Hass_Trio",
-	"name": "Hass_Trio",
+	"domain": "hass_trio",
+	"name": "hass_trio",
 	"codeowners": [
 		"@sangvikh"
 	],
