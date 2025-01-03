@@ -37,7 +37,7 @@ async def get_device_info(hass, entry):
         raise Exception("Failed to fetch data from the device")
 
     # Assign data to variables
-    mac_address = data.get("getMAC", "00:00:00:00:00:00:00:00")
+    mac_address = data.get("getMAC1", "00:00:00:00:00:00:00:00")
     serial_number = data.get("getSRN", "")
     firmware_version = data.get("getVER", "")
     device_type = data.get("getTYP", "")
