@@ -18,7 +18,7 @@ class PontosConfigFlow(config_entries.ConfigFlow, domain=DOMAIN):
             valid = await self._test_connection(user_input[CONF_IP_ADDRESS])
             if valid:
                 return self.async_create_entry(
-                    title=user_input.get(CONF_DEVICE_NAME, "Pontos Base"),
+                    title=user_input.get(CONF_DEVICE_NAME, "Syr Trio 2524"),
                     data=user_input
                 )
             else:
