@@ -48,7 +48,7 @@ async def get_device_info(hass, entry):
         raise Exception("Invalid MAC address or serial number")
 
     device_info = {
-        "identifiers": {(DOMAIN, "pontos_base")},
+        "identifiers": {(DOMAIN, "hass_trio")},
         "connections": {(CONNECTION_NETWORK_MAC, mac_address)},
         "name": device_name,
         "manufacturer": "Syr",
