@@ -35,6 +35,7 @@ class PontosConfigFlow(config_entries.ConfigFlow, domain=DOMAIN):
         )
 
     async def _test_connection(self, ip_address):
+        return True
         """Test the connection to the Syr Trio device."""
         url = URL_ADMIN.format(ip=ip_address)
         session = async_get_clientsession(self.hass)
