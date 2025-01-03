@@ -82,7 +82,7 @@ SENSOR_DETAILS = {
         "unit": "bar",
         "device_class": "pressure",
         "entity_category": EntityCategory.DIAGNOSTIC
-    }
+    },
     "battery_voltage": {
         "name": "Battery voltage",
         "endpoint": "getBAT",
@@ -98,7 +98,7 @@ SENSOR_DETAILS = {
         "device_class": "voltage",
         "format_dict": {",": "."},
         "entity_category": EntityCategory.DIAGNOSTIC
-    }
+    },
     "firmware_version": {
         "name": "Firmware version",
         "endpoint": "getVER",
