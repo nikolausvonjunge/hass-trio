@@ -1,3 +1,6 @@
+# WIP to enhance Pontos Base in order to also read Syr Trio 2524
+Will raise a PR on the original project once it works
+
 # hass-pontos
 
 [![GitHub Release](https://img.shields.io/github/release/sangvikh/hass-pontos.svg?style=flat)](https://github.com/sangvikh/hass-pontos/releases)
