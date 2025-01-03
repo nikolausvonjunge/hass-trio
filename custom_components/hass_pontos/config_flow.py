@@ -18,7 +18,7 @@ class PontosConfigFlow(config_entries.ConfigFlow, domain=DOMAIN):
             valid = await self._test_connection(user_input[CONF_IP_ADDRESS])
             if valid:
                 return self.async_create_entry(
-                    title=user_input.get(CONF_DEVICE_NAME, "Syr Trio 2524"),
+                    title=user_input.get(CONF_DEVICE_NAME, "Syr_Trio_2524"),
                     data=user_input
                 )
             else:
@@ -29,13 +29,13 @@ class PontosConfigFlow(config_entries.ConfigFlow, domain=DOMAIN):
             step_id="user", 
             data_schema=vol.Schema({
                 vol.Required(CONF_IP_ADDRESS, description={"suggested_value": "192.168.1.100"}): str,
-                vol.Optional(CONF_DEVICE_NAME, default="Pontos Base"): str,
+                vol.Optional(CONF_DEVICE_NAME, default="Syr_Trio_2524"): str,
             }),
             errors=errors
         )
 
     async def _test_connection(self, ip_address):
-        """Test the connection to the Pontos Base device."""
+        """Test the connection to the Syr Trio device."""
         url = URL_ADMIN.format(ip=ip_address)
         session = async_get_clientsession(self.hass)
         try:
