@@ -122,11 +122,6 @@ SENSOR_DETAILS = {
         "endpoint": "getVER",
         "entity_category": EntityCategory.DIAGNOSTIC
     },
-    "device_type": {
-        "name": "Device type",
-        "endpoint": "getTYP",
-        "entity_category": EntityCategory.DIAGNOSTIC
-    },
     "mac_address": {
         "name": "MAC Address",
         "endpoint": "getMAC1",
