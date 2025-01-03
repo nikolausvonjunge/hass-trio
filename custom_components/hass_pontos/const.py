@@ -20,7 +20,7 @@ URL_LIST = [
 ]
 
 ALARM_CODES = {
-    "FF": "no alarm",
+    "ff": "no alarm",
     "A1": "ALARM END SWITCH",
     "A2": "ALARM: Turbine blocked!",
     "A3": "ALARM: Leakage volume reached!",
