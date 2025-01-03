@@ -3,7 +3,7 @@ from homeassistant.components.valve import STATE_OPEN, STATE_OPENING, STATE_CLOS
 from homeassistant.helpers.entity import EntityCategory
 from homeassistant.components.sensor import SensorDeviceClass
 
-DOMAIN = "Syr_Trio"
+DOMAIN = "Hass_Trio"
 CONF_IP_ADDRESS = "ip_address"
 CONF_DEVICE_NAME = "device_name"
 FETCH_INTERVAL = timedelta(seconds=10)
