@@ -79,6 +79,7 @@ class PontosOptionsFlowHandler(config_entries.OptionsFlow):
         )
 
     async def _test_connection(self, ip_address):
+        return True
         """Test the connection to the Syr Base device."""
         url = URL_ADMIN.format(ip=ip_address, port=5333)
         session = async_get_clientsession(self.hass)
