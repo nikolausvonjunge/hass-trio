@@ -129,7 +129,7 @@ SENSOR_DETAILS = {
     },
     "mac_address": {
         "name": "MAC Address",
-        "endpoint": "getMAC",
+        "endpoint": "getMAC1",
         "entity_category": EntityCategory.DIAGNOSTIC
     },
     "alarm_status": {
@@ -148,17 +148,6 @@ SENSOR_DETAILS = {
         "endpoint": "getVLV",
         "code_dict": VALVE_CODES,
         "entity_category": EntityCategory.DIAGNOSTIC
-    },
-    "water_conductivity": {
-        "name": "Water conductivity",
-        "endpoint": "getCND",
-        "unit": "µS/cm"
-    },
-    "water_hardness": {
-        "name": "Water hardness",
-        "endpoint": "getCND",
-        "unit": "dH",
-        "scale": 1/30
     }
 }
 
