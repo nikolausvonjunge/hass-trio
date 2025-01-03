@@ -79,11 +79,11 @@ class PontosOptionsFlowHandler(config_entries.OptionsFlow):
         )
 
     async def _test_connection(self, ip_address):
-        """Test the connection to the Pontos Base device."""
-        url = URL_ADMIN.format(ip=ip_address)
+        """Test the connection to the Syr Base device."""
+        url = URL_ADMIN.format(ip=ip_address, port=5333)
         session = async_get_clientsession(self.hass)
         try:
-            async with session.get(url, timeout=5) as response:
+            async with session.get(url, timeout=10) as response:
                 return response.status == 200
         except (aiohttp.ClientError, asyncio.TimeoutError):
             return False
